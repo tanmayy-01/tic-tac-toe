@@ -25,37 +25,38 @@ document.addEventListener('DOMContentLoaded',() => {
     })
 
     function winningCombo(char) {
+        let result = document.getElementById('result');
         if(arr[0] == char && arr[1] == char && arr[2] == char) {
             // for 1st row
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[3] == char && arr[4] == char && arr[5] == char) {
             // for 2nd row
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[6] == char && arr[7] == char && arr[8] == char) {
             // for 3rd row
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[0] == char && arr[3] == char && arr[6] == char) {
             // for 1st column
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[1] == char && arr[4] == char && arr[7] == char) {
             // for 2nd column
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[2] == char && arr[5] == char && arr[8] == char) {
             // for 3rd column
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[0] == char && arr[4] == char && arr[8] == char) {
             // 1st diagonal
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         else if(arr[2] == char && arr[4] == char && arr[6] == char) {
             // 1st diagonal
-            alert(`${char} wins`)
+            result.textContent = `${char} wins`;
         }
         
     }

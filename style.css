@@ -9,6 +9,10 @@ body {
     overflow-y: hidden;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
 #outer {
     border: 2px solid black;
     width: 580px;
@@ -28,4 +32,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#result {
+    font-size: x-large;
+    color: black;
+    margin: 10px 0;
+    font-weight: bold;
 }
